@@ -95,7 +95,9 @@ class Login extends Component{
                             onFocus={this.hide_errors}>
                     </Input>
                     {/* <Link to="/homepage"> */}
-                    <FButton onClick={this.findemail}>Log in</FButton>   
+                    <Link to="/homepage">
+                    <FButton >Log in</FButton>
+                    </Link>   
                     {/* </Link> */}
                     <Text>Forgot password?</Text>    
                 </BoxTop>    

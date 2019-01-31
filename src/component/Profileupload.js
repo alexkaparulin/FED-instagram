@@ -89,19 +89,18 @@ const Img = styled.img`
         margin:0.25em;
     }
     @media (min-width: 48em) {
-        height:9em;
+        height:15em;
         width:9em;
         margin:0.4em;
     }
-    @media (min-width: 48em) {
-        height:11em;
-        width:11em;
-        margin:0.45em;
-    }
-
-    @media (min-width: 76.8em) {
-        height:14em;
+    @media (min-width: 56.8em) {
+        height:16em;
         width:14em;
         margin:0.6em;
-     } 
+     }
+       @media (min-width: 80.4em) {
+        height:18em;
+        width:15em;
+        margin:0.45em;
+    } 
 `

@@ -114,13 +114,14 @@ const Div= styled.div`
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    @media (min-width: 78.6em) {
+    @media (min-width: 48.6em) {
         display:flex;
         flex-direction:row;
         align-items:center;
         justify-content:center;
         /* margin:-9em -20em 0 0; */
         margin-left:10em;
+        background:white;
     }
     @media (max-width: 42.5em) {
     background:white;

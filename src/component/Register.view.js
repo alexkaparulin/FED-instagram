@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import instagramLogo from '../media/instagramLogo.png'
 import Ifacebook from '../media/face.png'
+import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
 
 class Register extends Component {
@@ -113,37 +114,41 @@ class Register extends Component {
                     <Input type="email" 
                             placeholder="Email"
                             name="email"
-                            value={this.state.email}
-                            onChange={this.onChange} 
-                            error_styled={this.state.error_field==='email'}
-                            onBlur={this.validate_form}
-                            onFocus={this.hide_errors}></Input>
+                            // value={this.state.email}
+                            // onChange={this.onChange} 
+                            // error_styled={this.state.error_field==='email'}
+                            // onBlur={this.validate_form}
+                            // onFocus={this.hide_errors}
+                            ></Input>
                     <Input type="text" 
                             placeholder="Full Name" 
                             name="fullname"
-                            value={this.state.fullname}
-                            onChange={this.onChange} 
-                            onBlur={this.validate_form}
-                            onFocus={this.hide_errors}></Input>
+                            // value={this.state.fullname}
+                            // onChange={this.onChange} 
+                            // onBlur={this.validate_form}
+                            // onFocus={this.hide_errors}
+                            ></Input>
                     <Input type="text" 
                             placeholder="Username"
                             name="username"
-                            value={this.state.username}
-                            onChange={this.onChange}
-                            onBlur={this.validate_form}
-                            onFocus={this.hide_errors} ></Input>
+                            // value={this.state.username}
+                            // onChange={this.onChange}
+                            // onBlur={this.validate_form}
+                            // onFocus={this.hide_errors}
+                             ></Input>
                     <Input type="password"
                             placeholder="Password"
                             name="password"
-                            value={this.state.password}
-                            onChange={this.onChange}
-                            onBlur={this.validate_form}
-                            onFocus={this.hide_errors}></Input>
+                            // value={this.state.password}
+                            // onChange={this.onChange}
+                            // onBlur={this.validate_form}
+                            // onFocus={this.hide_errors}
+                            ></Input>
                 </Inputs>
-                <ErrorMsg show={(this.state.form_valid !== true)}>
-                               {this.state.error_msg}
-                    </ErrorMsg>
-               <Button onClick={this.onSubmit} type="submit"><Strong>Sign up</Strong></Button>
+                {/* <ErrorMsg show={(this.state.form_valid !== true)}> */}
+                               {/* {this.state.error_msg} */}
+                    {/* </ErrorMsg> */}
+               <Link to="/username"><Button type="submit"><Strong>Sign up</Strong></Button></Link>
                 <LabelBottom>By signing up, you agree to our<br/>
                     <BStrong>Terms, Data Policy</BStrong> and 
                     <BStrong> Cookies<br/> Policy.</BStrong>
@@ -269,16 +274,16 @@ const Strong = styled.strong`
 `
 const BStrong = styled.strong`
 `
-const ErrorMsg = styled.h1`
-    color:red;
-    border:red solid 0.1;
-    border-radius:6px;
-    visibility: ${(props)=> props.show === true ? 'visible' : 'hidden'};
-    align-self: center;
-    text-align:center;
-    padding:.6re;
-    width:100%;
-    /* margin-bottom:1rem; */
-    font-size:1em;
-    font-family:'Arial';
-`;
+// const ErrorMsg = styled.h1`
+//     color:red;
+//     border:red solid 0.1;
+//     border-radius:6px;
+//     visibility: ${(props)=> props.show === true ? 'visible' : 'hidden'};
+//     align-self: center;
+//     text-align:center;
+//     padding:.6re;
+//     width:100%;
+//     /* margin-bottom:1rem; */
+//     font-size:1em;
+//     font-family:'Arial';
+// `;

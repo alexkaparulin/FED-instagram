@@ -53,6 +53,10 @@ const Input = styled.input`
     font-weight:100;
     outline:none;
     }
+    @media(min-width:1900px){
+        right:55em;
+        width:25em;
+    }
     @media(min-width:144em){
         right:80em;
     }

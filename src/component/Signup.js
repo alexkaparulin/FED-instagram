@@ -52,6 +52,16 @@ const SignupContainer = styled.div`
     align-items:center;
     border:.3 solid red;
     background:white;
+    @media (min-width: 1640px) {
+       margin-left:15em;
+    }
+    @media (min-width: 1640px) {
+       margin-left:15em;
+    }
+    @media (min-width: 2560px) {
+       margin-left:-2em;
+    }
+
 `
 const BoxBottom = styled.div`
     display:flex;

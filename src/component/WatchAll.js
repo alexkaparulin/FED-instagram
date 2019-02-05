@@ -42,8 +42,8 @@ class Watchall extends Component{
             <Container className="container">
                 <Link to="/homepage"><Span onClick={this.close}>&times;</Span></Link>
                 <BoxImage className="story">
-                 <Watchone />
                 </BoxImage>
+                 <Watchone />
             </Container>
         )
     }
@@ -67,6 +67,15 @@ const BoxImage = styled.div`
     background-repeat:no-repeat;
     background-position:center center;
     /* box-shadow: 2px 5px #888888; */
+    @media (min-width: 1440px) {
+       margin-top:-15.5em;
+     }
+     @media (min-width: 1920px) {
+       margin-top:-37.5em;
+     }
+     @media (min-width: 2560px) {
+       margin-top:-64.5em;
+     }
 `
 const Span= styled.span`
     position:absolute;

@@ -51,13 +51,13 @@ class Zuckstory extends Component{
             <Container className="container">
                 <Link to="/homepage"><Span onClick={this.close}>&times;</Span></Link>
                 <BoxImage className="story">
+                </BoxImage>
                 <Box>
                       <Img className="user"></Img>
                       <P className="p"></P>
                       <Time className="time"></Time>
                       <i className="fas fa-ellipsis-h"></i>
                   </Box>
-                </BoxImage>
             </Container>
         )
     }
@@ -81,6 +81,15 @@ const BoxImage = styled.div`
     background-repeat:no-repeat;
     background-position:center center;
     /* box-shadow: 2px 5px #888888; */
+    @media (min-width: 1440px) {
+       margin-top:-15.5em;
+     }
+     @media (min-width: 1920px) {
+       margin-top:-37.5em;
+     }
+     @media (min-width: 2560px) {
+       margin-top:-64.5em;
+     }
 `
 const Span= styled.span`
     position:absolute;

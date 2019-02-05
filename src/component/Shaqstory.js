@@ -17,8 +17,7 @@ class Shaqstory extends Component{
         const pic = document.querySelector('.story');
         const images = [oneil];
         pic.style.backgroundImage = "url("+ images[0]+")";
-        
-            //  let i = 0;
+
              setTimeout(this.close, 4500)
          
     } 
@@ -52,13 +51,13 @@ class Shaqstory extends Component{
             <Container className="container">
                 <Link to="/homepage"><Span onClick={this.close}>&times;</Span></Link>
                 <BoxImage className="story">
+                </BoxImage>
                 <Box>
                       <Img className="user"></Img>
                       <P className="p"></P>
                       <Time className="time"></Time>
                       <i className="fas fa-ellipsis-h"></i>
                   </Box>
-                </BoxImage>
             </Container>
         )
     }
@@ -77,11 +76,20 @@ const BoxImage = styled.div`
     margin-top:3em;
     width:18em;
     height:32em;
-    /* border:gray solid 0.1em; */
+    /* border:gray solid .2em; */
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center center;
     /* box-shadow: 2px 5px #888888; */
+    @media (min-width: 1440px) {
+       margin-top:-15.5em;
+     }
+     @media (min-width: 1920px) {
+       margin-top:-37.5em;
+     }
+     @media (min-width: 2560px) {
+       margin-top:-64.5em;
+     }
 `
 const Span= styled.span`
     position:absolute;
@@ -115,6 +123,7 @@ const P = styled.p`
     margin-left:0.5em;
     font-size:0.8em;
     font-weight:600;
+    border:.2em solid red;
 `
 const Time= styled.p`
     font-weight:100;

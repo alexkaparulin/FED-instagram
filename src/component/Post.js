@@ -75,10 +75,10 @@ class Post extends Component{
                 <Likes>{this.state.likes}likes</Likes>
                 <UserName>      
                     <Id><strong>{this.props.username}</strong> {this.props.title}</Id>
+            <TodoApp time ="2 MINUTES AGO"/>
                 </UserName>
-            <TodoApp/>
+            {/* <Time>{this.props.time}</Time> */}
              </Comment>
-            <Time>{this.props.time}</Time>
         </CBox>
         )
     }
@@ -95,7 +95,7 @@ const CBox = styled.div`
     @media (min-width: 40em) {
          margin:2em 0;
          border:0.1em solid lightgray;
-         height:35em;
+         height:auto;
          width:38em;
          border-radius:.2em;
      }
@@ -142,13 +142,14 @@ const BottomPost = styled.div`
     align-items:center;
     justify-content:space-between;
 `
-const Time = styled.p`
-    font-size:0.55em;
-    margin-left:0.5em;
-    /* margin-top:em; */
-    font-weight:400;
-    color:gray;
-`
+// const Time = styled.p`
+//     border-top:.1em solid lightgray;
+//     font-size:0.55em;
+//     margin:0 0.5em;
+//     padding:1em 0;
+//     font-weight:400;
+//     color:gray;
+// `
 const BoxTop = styled.div`
       display:flex;
       justify-content:space-between;
@@ -174,4 +175,5 @@ const UserName =styled.div`
 `   
 const Id= styled(Likes)`
     margin-top:-.7em;
+    margin-bottom:1.75em;
 `

@@ -45,6 +45,8 @@ const SearchBox = styled.div`
     height:2.75em;
     display:flex;
     align-items:center;
+    /* align-self: center; */
+    /* justify-self:center; */
     justify-content:center;
     background:whitesmoke;
     border-bottom:0.1em solid lightgray;
@@ -56,6 +58,7 @@ const Input = styled.input`
     height:2em;
     width:90%;
     outline:none;
+    /* align-self:center; */
 `
 const SliderBox =styled.div`
     display:flex;

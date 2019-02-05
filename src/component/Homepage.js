@@ -40,11 +40,11 @@ class Homepage extends Component{
             <RowBox>
                 <ContentBox>
                     <Stories />
-                    <Post time ="2 MINUTES AGO" id="MarinGarrix" src={show} userphoto={garrix} username="MartinGarrix" title="Here we go again"/>
-                    <Post time="5 MINUTES AGO" id="DonaldTrump" src={office} userphoto={imageid} username="DonaldTrump" title="I'm not angry..."/>
-                    <Post time ="6 MINUTES AGO" id="CardiB" src={prize} userphoto={cardi} username="CardiB" title="Papparazi.."/>
-                    <Post time ="9 MINUTES AGO" id="Brady" src={superbowl} userphoto={brady} username="Brady" title="WE MADE IT AGAIN!!!!!"/>
-                    <Post time ="12 MINUTES AGO" id="Zuckerbeg" src={zuck} userphoto={mark}  username="Zuckerberg" title="First VR meeting"/>
+                    <Post  id="MarinGarrix" src={show} userphoto={garrix} username="MartinGarrix" title="Here we go again"/>
+                    <Post  id="DonaldTrump" src={office} userphoto={imageid} username="DonaldTrump" title="I'm not angry..."/>
+                    <Post  id="CardiB" src={prize} userphoto={cardi} username="CardiB" title="Papparazi.."/>
+                    <Post  id="Brady" src={superbowl} userphoto={brady} username="Brady" title="WE MADE IT AGAIN!!!!!"/>
+                    <Post  id="Zuckerbeg" src={zuck} userphoto={mark}  username="Zuckerberg" title="First VR meeting"/>
             {/* <Bottomnav/> */}
                 </ContentBox>
                 <RightBox>
@@ -95,6 +95,7 @@ const BoxCon = styled.div`
     display:flex;
     flex-direction:column;
     background:whitesmoke;
+    /* align-items:center; */
     /* width:100%; */
 `
 const ContentBox = styled.div`
@@ -105,6 +106,7 @@ const ContentBox = styled.div`
 `
 const RowBox = styled.div`
     display:inline;
+    justify-content:center;
     @media (min-width: 60em) {
     display: flex;
       }

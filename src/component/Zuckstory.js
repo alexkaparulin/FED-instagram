@@ -1,16 +1,15 @@
 import React,{Component} from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link,withRouter} from 'react-router-dom';
 
 import mark from '../media/mark.jpg'
 import zuck from '../media/zuck.jpg'
 
 class Zuckstory extends Component{
-    close(){
+    close=(e)=>{
         const story = document.querySelector('.container');
         story.style.display='none';
-        window.location.assign('/homepage');
-        
+        this.props.history.push("/homepage");        
     }
     updating(){
         const pic = document.querySelector('.story');
@@ -62,7 +61,7 @@ class Zuckstory extends Component{
         )
     }
 }
-export default Zuckstory;
+export default withRouter(Zuckstory);
 
 const Container = styled.div`
     width:209.8vh;

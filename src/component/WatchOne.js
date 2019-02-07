@@ -8,10 +8,7 @@ import shaq from '../media/shak.jpg'
 import travis from '../media/travis.jpg'
 
 class Watchone extends Component{
-    // close(){
-    //     const story = document.querySelector('.user');
-    //     story.style.display='none';
-    // }
+
     
     updating(){
         const pic = document.querySelector('.user');

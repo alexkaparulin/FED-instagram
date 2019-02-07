@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link,withRouter} from 'react-router-dom';
 
 
 import brady from '../media/bardy.jpg'
@@ -8,11 +8,10 @@ import tom from '../media/tom.jpg'
 
 
 class Bradystory extends Component{
-    close(){
+    close=(e)=>{
         const story = document.querySelector('.container');
         story.style.display='none';
-        window.location.assign('/homepage');
-        
+        this.props.history.push("/homepage");        
     }
     updating(){
         const pic = document.querySelector('.story');
@@ -64,7 +63,7 @@ class Bradystory extends Component{
         )
     }
 }
-export default Bradystory;
+export default withRouter(Bradystory);
 
 const Container = styled.div`
     width:209.8vh;

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link,withRouter } from 'react-router-dom';
 
 import oneil from '../media/oneil.jpg'
 import guetta from '../media/guetta.jpg'
@@ -12,9 +12,10 @@ import Watchone from './WatchOne';
 
 
 class Watchall extends Component{
-    close(){
+    close=(e)=>{
         const story = document.querySelector('.container');
         story.style.display='none';
+        this.props.history.push("/homepage");        
     }
     updating(){
         const pic = document.querySelector('.story');
@@ -48,7 +49,7 @@ class Watchall extends Component{
         )
     }
 }
-export default Watchall;
+export default withRouter(Watchall);
 
 const Container = styled.div`
     width:209.8vh;

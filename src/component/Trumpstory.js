@@ -1,16 +1,15 @@
 import React,{Component} from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link,withRouter} from 'react-router-dom';
 
 import trump from '../media/userimage.jpg'
 import trumps from '../media/trumpoffice.jpg'
 
 class Trumpstory extends Component{
-    close(){
+    close=(e)=>{
         const story = document.querySelector('.container');
         story.style.display='none';
-        window.location.assign('/homepage');
-        
+        this.props.history.push("/homepage");        
     }
     updating(){
         const pic = document.querySelector('.story');
@@ -66,7 +65,7 @@ class Trumpstory extends Component{
         )
     }
 }
-export default Trumpstory;
+export default withRouter(Trumpstory);
 
 const Container = styled.div`
     width:209.8vh;

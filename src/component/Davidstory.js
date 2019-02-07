@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styled from 'styled-components';
-import { Link,withRouter ,Router} from 'react-router-dom';
+import { Link,withRouter} from 'react-router-dom';
 
 import guetta from '../media/guetta.jpg'
 import david from '../media/davidG.jpg'
@@ -16,10 +16,7 @@ class Davidstory extends Component{
     close=(e)=>{
         const story = document.querySelector('.container');
         story.style.display='none';
-        // e.preventDefault();
-        this.props.history.push("/homepage");
-        // this.history.push('/homepage');
-        
+        this.props.history.push("/homepage");        
     }
     updating(){
         const pic = document.querySelector('.story');

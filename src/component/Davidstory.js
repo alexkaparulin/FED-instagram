@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link,withRouter ,Router} from 'react-router-dom';
 
 import guetta from '../media/guetta.jpg'
 import david from '../media/davidG.jpg'
@@ -13,10 +13,12 @@ class Davidstory extends Component{
             end:false
         }
     }
-    close(){
+    close=(e)=>{
         const story = document.querySelector('.container');
         story.style.display='none';
-        // window.location.assign('/homepage');
+        // e.preventDefault();
+        this.props.history.push("/homepage");
+        // this.history.push('/homepage');
         
     }
     updating(){
@@ -58,6 +60,7 @@ class Davidstory extends Component{
         this.updatingUsers();
     }
     render(){
+        // const { history } = this.props;
         return(
             <Container className="container">
                 <Link to="/homepage"><Span onClick={this.close}>&times;</Span></Link>
@@ -73,7 +76,7 @@ class Davidstory extends Component{
         )
     }
 }
-export default Davidstory;
+export default withRouter(Davidstory);
 
 const Container = styled.div`
     width:209.8vh;

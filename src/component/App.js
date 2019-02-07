@@ -1,7 +1,7 @@
 // require('dotenv').config();
 import React from 'react';
 import {
-    Route,BrowserRouter
+    Route,BrowserRouter,Switch
 } from 'react-router-dom';
 
 import Login from '../component/Login';
@@ -36,8 +36,10 @@ import Zuckstory from './Zuckstory';
 
 const App = ()=> (
         <BrowserRouter>
+		
             <div className="main-app">
-                {/* <TopBar><Links/></TopBar> */}
+				{/* <TopBar><Links/></TopBar> */}
+				<Switch>
                 <Route exact path="/" component={Login}></Route>
 		        <Route path="/username" component={Username}></Route>
 		        <Route path="/login" component={Login}></Route> 
@@ -53,7 +55,8 @@ const App = ()=> (
 		        <Route path="/travisstory" component={Travisstory}></Route>
 		        <Route path="/bradystory" component={Bradystory}></Route>
 		        <Route path="/shaqstory" component={Shaqstory}></Route>
-		        <Route path="/zuckstory" component={Zuckstory}></Route> 
+		        <Route path="/zuckstory" component={Zuckstory}></Route>
+				</Switch> 
             </div>
         </BrowserRouter>
 )

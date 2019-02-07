@@ -31,7 +31,7 @@ class Storycarusel extends Component{
                     <ImgId>{this.state.profile_data}</ImgId>
                     <Plus src={plus}></Plus>
             </ImgBox>    
-            <Link to="/davidstory">
+            <Link to="/story/davidstory">
             <Userstory username="DavidGuetta" src={david} background={david}/>  
             </Link>
             <Link to="/martinstory">

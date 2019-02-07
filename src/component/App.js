@@ -28,7 +28,7 @@ import Zuckstory from './Zuckstory';
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-// URL DEPLOYED = https://romantic-neumann-3770e1.netlify.com/username;
+// URL DEPLOYED = https://distracted-leakey-5140be.netlify.com/;
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
@@ -46,7 +46,7 @@ const App = ()=> (
 		        <Route path="/search" component={Search}></Route>
 		        <Route path="/activity" component={Activity}></Route>
 		        <Route path="/stories" component={Watchall}></Route>
-		        <Route path="/davidstory" component={Davidstory}></Route>
+		        <Route path="/story/davidstory" component={Davidstory}></Route>
 		        <Route path="/martinstory" component={Martinstory}></Route>
 		        <Route path="/trumpstory" component={Trumpstory}></Route>
 		        <Route path="/cardistory" component={Cardistory}></Route>

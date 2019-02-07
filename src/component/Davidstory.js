@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-
 import guetta from '../media/guetta.jpg'
 import david from '../media/davidG.jpg'
 

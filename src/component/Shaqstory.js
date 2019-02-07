@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import shaq from '../media/shak.jpg'
 import oneil from '../media/oneil.jpg'
 
-
 class Shaqstory extends Component{
     close(){
         const story = document.querySelector('.container');
@@ -18,7 +17,7 @@ class Shaqstory extends Component{
         const images = [oneil];
         pic.style.backgroundImage = "url("+ images[0]+")";
 
-             setTimeout(this.close, 4500)
+             setTimeout(this.close, 4500);
          
     } 
     updating1(){
@@ -35,9 +34,7 @@ class Shaqstory extends Component{
     updatingUsers(){
         const user = document.querySelector('.p');
         const time = document.querySelector('.time');
-        const text = [
-            "Shaq"
-        ];
+        const text = ["Shaq"];
         user.textContent = text[0];
         time.textContent = 1 + "m";
     } 
@@ -101,7 +98,6 @@ const Span= styled.span`
 ` 
 const Box = styled.div`
     display: flex;
-    /* border:0.2em solid red; */
     position:absolute;
     align-items:center;
     top:0.5em;
@@ -115,15 +111,12 @@ const Img = styled.img`
     background-size:cover;
     border:0.1em solid #fff;
     background-repeat:no-repeat;
-    /* background-position:center ; */
-    /* border:0.1em solid blue; */
 `
 const P = styled.p`
     color:#fff;
     margin-left:0.5em;
     font-size:0.8em;
     font-weight:600;
-    border:.2em solid red;
 `
 const Time= styled.p`
     font-weight:100;

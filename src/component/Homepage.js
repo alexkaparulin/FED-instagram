@@ -40,7 +40,7 @@ class Homepage extends Component{
             <RowBox>
                 <ContentBox>
                     <Stories />
-                    <Post  id="MarinGarrix" src={show} userphoto={garrix} username="MartinGarrix" title="Here we go again"/>
+                    <Post  id="MartinGarrix" src={show} userphoto={garrix} username="MartinGarrix" title="Here we go again"/>
                     <Post  id="DonaldTrump" src={office} userphoto={imageid} username="DonaldTrump" title="I'm not angry..."/>
                     <Post  id="CardiB" src={prize} userphoto={cardi} username="CardiB" title="Papparazi.."/>
                     <Post  id="Brady" src={superbowl} userphoto={brady} username="Brady" title="WE MADE IT AGAIN!!!!!"/>

@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import styled ,{keyframes}from 'styled-components'
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 import marsh from '../media/Marsh.jpg'
 import david from '../media/davidG.jpg'
@@ -31,7 +31,7 @@ class Storycarusel extends Component{
                     <ImgId>{this.state.profile_data}</ImgId>
                     <Plus src={plus}></Plus>
             </ImgBox>    
-            <Link to="/story/davidstory">
+            <Link to="/davidstory">
             <Userstory username="DavidGuetta" src={david} background={david}/>  
             </Link>
             <Link to="/martinstory">

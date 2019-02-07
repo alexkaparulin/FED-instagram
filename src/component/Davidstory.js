@@ -7,10 +7,16 @@ import david from '../media/davidG.jpg'
 
 
 class Davidstory extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            end:false
+        }
+    }
     close(){
         const story = document.querySelector('.container');
         story.style.display='none';
-        window.location.assign('/homepage');
+        // window.location.assign('/homepage');
         
     }
     updating(){

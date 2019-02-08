@@ -11,7 +11,7 @@ class Martinstory extends Component{
     
         close=(e)=>{
             const story = document.querySelector('.container');
-            story.style.display='none';
+            // story.style.display='none';
             this.props.history.push("/homepage");        
         }
     updating(){
@@ -83,14 +83,22 @@ const BoxImage = styled.div`
     background-repeat:no-repeat;
     background-position:center center;
     /* box-shadow: 2px 5px #888888; */
+    @media (min-width: 768px) {
+       margin-top:9em;
+     }
+     @media (min-width: 1024px) {
+       margin-top:-1em;
+     }
     @media (min-width: 1440px) {
-       margin-top:-15.5em;
+       margin-top:-6.5em;
+       height:40em;
+       width:24em;
      }
      @media (min-width: 1920px) {
        margin-top:-37.5em;
      }
      @media (min-width: 2560px) {
-       margin-top:-64.5em;
+       margin-top:-52.5em;
      }
 `
 const Span= styled.span`

@@ -9,8 +9,8 @@ import tom from '../media/tom.jpg'
 
 class Bradystory extends Component{
     close=(e)=>{
-        const story = document.querySelector('.container');
-        story.style.display='none';
+        // const story = document.querySelector('.container');
+        // story.style.display='none';
         this.props.history.push("/homepage");        
     }
     updating(){
@@ -82,14 +82,22 @@ const BoxImage = styled.div`
     background-repeat:no-repeat;
     background-position:center center;
     /* box-shadow: 2px 5px #888888; */
+    @media (min-width: 768px) {
+       margin-top:9em;
+     }
+     @media (min-width: 1024px) {
+       margin-top:-1em;
+     }
     @media (min-width: 1440px) {
-       margin-top:-15.5em;
+       margin-top:-6.5em;
+       height:40em;
+       width:24em;
      }
      @media (min-width: 1920px) {
        margin-top:-37.5em;
      }
      @media (min-width: 2560px) {
-       margin-top:-64.5em;
+       margin-top:-52.5em;
      }
 `
 const Span= styled.span`
@@ -118,16 +126,46 @@ const Img = styled.img`
     background-repeat:no-repeat;
     /* background-position:center ; */
     /* border:0.1em solid blue; */
+    @media (min-width: 1440px) {
+        height:2.5em;
+        width:2.5em;
+        margin-left:-3em;
+     }
+     @media (min-width: 1920px) {
+    
+     }
+     @media (min-width: 2560px) {
+    
+     }
 `
 const P = styled.p`
     color:#fff;
     margin-left:0.5em;
     font-size:0.8em;
     font-weight:600;
+    @media (min-width: 1440px) {
+       font-size:.9em;
+     }
+     @media (min-width: 1920px) {
+        font-size:1em;    
+     }
+     @media (min-width: 2560px) {
+    font-size:1.1em;
+     }
 `
 const Time= styled.p`
     font-weight:100;
     font-size:0.8em;
     color:lightgray;
     margin-left:1em;
+    @media (min-width: 1440px) {
+       font-size:.9em;
+       margin-right:3.5em;
+     }
+     @media (min-width: 1920px) {
+        font-size:1em;    
+     }
+     @media (min-width: 2560px) {
+    font-size:1.1em;
+     }
 `

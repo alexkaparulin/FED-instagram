@@ -36,6 +36,12 @@ code {
     color:white;
     position: absolute;
     right:0.2em;
+    
+  }
+  @media screen and (min-width: 1440px) {
+    .fa-ellipsis-h {
+     right:-2em;
+    }
   }
  
 

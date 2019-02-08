@@ -4,8 +4,8 @@ import Likenotification from './Likeontification';
 import Bottomnav from './Bottomnav';
 
 class Activity extends Component{
-  
 render(){
+
     return(
        <BoxContain>
             <Top>
@@ -20,6 +20,24 @@ render(){
             <Likenotification user="DonffLogen4" time="17m"/>
             <Likenotification user="DonffLogen4" time="20m"/>
             <Likenotification user="Donff3333Logen4" time="24m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="37m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="37m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="37m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
+            <Likenotification user="DonffLogen4" time="37m"/>
+            <Likenotification user="DonffLogen4" time="47m"/>
             <Likenotification user="DonffLogen4" time="47m"/>
             <Likenotification user="DonffLogen4" time="37m"/>
             <Likenotification user="DonffLogen4" time="47m"/>

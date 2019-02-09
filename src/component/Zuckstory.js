@@ -162,6 +162,6 @@ const Time= styled.p`
         font-size:1em;    
      }
      @media (min-width: 2560px) {
-    font-size:1.1em;
+        font-size:1.1em;
      }
 `

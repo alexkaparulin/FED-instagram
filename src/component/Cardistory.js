@@ -92,7 +92,7 @@ const BoxImage = styled.div`
        width:24em;
      }
      @media (min-width: 1920px) {
-       margin-top:-20.5em;
+       margin-top:-13.5em;
      }
      @media (min-width: 2560px) {
        margin-top:-45.5em;

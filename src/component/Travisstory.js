@@ -88,18 +88,18 @@ const BoxImage = styled.div`
        margin-top:9em;
      }
      @media (min-width: 1024px) {
-       margin-top:-1em;
+       margin-top:3em;
      }
     @media (min-width: 1440px) {
-       margin-top:-6.5em;
+       margin-top:-3.5em;
        height:40em;
        width:24em;
      }
      @media (min-width: 1920px) {
-       margin-top:-37.5em;
+       margin-top:-9.5em;
      }
      @media (min-width: 2560px) {
-       margin-top:-52.5em;
+       margin-top:-45.5em;
      }
 `
 const Span= styled.span`
@@ -126,18 +126,46 @@ const Img = styled.img`
     background-size:cover;
     border:0.1em solid #fff;
     background-repeat:no-repeat;
-    /* background-position:center ; */
-    /* border:0.1em solid blue; */
+    @media (min-width: 1440px) {
+        height:2.5em;
+        width:2.5em;
+        margin-left:-3em;
+     }
+     @media (min-width: 1920px) {
+    
+     }
+     @media (min-width: 2560px) {
+    
+     }
 `
 const P = styled.p`
     color:#fff;
     margin-left:0.5em;
     font-size:0.8em;
     font-weight:600;
+    @media (min-width: 1440px) {
+       font-size:.9em;
+     }
+     @media (min-width: 1920px) {
+        font-size:1em;    
+     }
+     @media (min-width: 2560px) {
+    font-size:1.1em;
+     }
 `
 const Time= styled.p`
     font-weight:100;
     font-size:0.8em;
     color:lightgray;
     margin-left:1em;
+    @media (min-width: 1440px) {
+       font-size:.9em;
+       margin-right:3.5em;
+     }
+     @media (min-width: 1920px) {
+        font-size:1em;    
+     }
+     @media (min-width: 2560px) {
+    font-size:1.1em;
+     }
 `

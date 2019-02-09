@@ -86,18 +86,18 @@ const BoxImage = styled.div`
        margin-top:9em;
      }
      @media (min-width: 1024px) {
-       margin-top:-1em;
+       margin-top:3em;
      }
     @media (min-width: 1440px) {
-       margin-top:-6.5em;
+       margin-top:-3.5em;
        height:40em;
        width:24em;
      }
      @media (min-width: 1920px) {
-       margin-top:-37.5em;
+       margin-top:-9.5em;
      }
      @media (min-width: 2560px) {
-       margin-top:-52.5em;
+       margin-top:-45.5em;
      }
 `
 const Span= styled.span`

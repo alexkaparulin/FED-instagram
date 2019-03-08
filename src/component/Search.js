@@ -9,12 +9,12 @@ import Flexgrid from './Flexgrid';
 import Carusel from './Carusel';
 
 class Search extends Component{
-  
+   
     render(){
         return(
             <BoxContainer>
                 <SearchBox>
-                    <Input type="text" placeholder="Search" className="search"></Input>
+                    <Input type="text" placeholder="Search" className="search" onClick={this.open}></Input>
                 </SearchBox>  
                 <SliderBox>
                     <Carusel />

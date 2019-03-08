@@ -1,14 +1,34 @@
 import React ,{Component} from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import OpenSearch from './OpenSearch';
 
 class Links extends Component {
-    
+    constructor(){
+        super();
+        this.state ={
+            searchopen:false,
+            data:[]
+        }
+    }
+    toggleDropDown=(e)=>{
+        e.preventDefault();
+   if(!this.state.searchopen){
+        this.setState({ searchopen: true }, () => {
+            console.log(this.state.searchopen)})
+    }
+   else{
+        this.setState({searchopen:false},()=>{
+            console.log(this.state.searchopen)})}
+    }
+  
     render(){
         return(   
     <ULinks>
-            <Input type="text" placeholder="Search" className="seaBar"></Input>
+            <Input type="text" placeholder="Search" className="seaBar" onClick={this.toggleDropDown}></Input>
+            {
+                this.state.searchopen? <OpenSearch />:''
+            }
             <Link to="/search">
                 <i className="fas fa-search"></i>
             </Link> 
@@ -30,7 +50,6 @@ class Links extends Component {
 }
 }
 export default Links;
-
 
 const ULinks = styled.div`
     display:flex;

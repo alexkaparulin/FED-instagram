@@ -22,10 +22,11 @@ export default Columnstory
 
 const Story = styled.div`
       display:flex;
-      /* height:15em; */
+      height:5em;
       align-items:center;
-      padding:1em 0;
-      border:.1em solid black;
+      justify-content:flex-start;
+      padding:1.2em 0;
+      /* border:.1em solid black; */
       margin-top:0.3em;
       `
 const SImg = styled.img`

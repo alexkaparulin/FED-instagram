@@ -22,19 +22,19 @@ export default Columnstory
 
 const Story = styled.div`
       display:flex;
+      /* height:15em; */
       align-items:center;
-      padding:1.5em 0;
-      /* height:100%; */
-      border:.1em solid red;
-      margin:0.1em;
+      padding:1em 0;
+      border:.1em solid black;
+      margin-top:0.3em;
       `
 const SImg = styled.img`
       height:2em;
+      width:2em;
       border-top:0.15em solid #b266b2;
       border-right:0.15em solid  #a64ca6;
       border-bottom:0.15em solid #ffd27f;
       border-left:0.15em solid #ffae19;
-      width:2em;
       border-radius:100%;
       margin-right:0.5em;
 `

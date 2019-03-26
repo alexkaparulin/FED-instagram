@@ -160,7 +160,9 @@ const UserStories = styled.div`
 const PeopleStories = styled.div`
       display:flex;
       flex-direction:column;
-      overflow:hidden auto;
+      justify-content:space-between;
+      align-items:space-between;
+      overflow: auto;
 `
 const UserFollow = styled.div`
     display:flex;

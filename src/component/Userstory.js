@@ -23,7 +23,7 @@ const ImgBox = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding-top:0.4em;
+    padding-top:0.8em;
 `
 const rotate= keyframes`
     0% {
@@ -40,32 +40,21 @@ const Img = styled.img`
     height:100%;
     width:100%;
     border-radius:100%;
-    /* border-top:0.15em solid #b266b2;
-    border-right:0.15em solid  #a64ca6;
-    border-bottom:0.15em solid #ffd27f;
-    border-left:0.15em solid #ffae19; */
-    /* box-shadow: 0 0 0.2em #000; */
-    /* border-radius:100%; */
-    /* padding:0.12em;
-    height:3.5em;
-    width:3.5em;
-    margin:0.03em 0.45em;
-    background:white; */
     animation:none;
 `
 const Imgborder = styled.div`
     border:.1em solid black;
     border-radius:100%;
     padding:0.12em;
-    height:3.5em;
-    width:3.5em;
+    height:3.3em;
+    width:3.3em;
     margin:0em 0.45em;
     margin-top:0.1em;
     background:white;
-    border-top:0.15em solid #b266b2;
-    border-right:0.15em solid  #a64ca6;
-    border-bottom:0.15em solid #ffd27f;
-    border-left:0.15em solid #ffae19;
+    border-top:0.145em solid #b266b2;
+    border-right:0.145em solid  #a64ca6;
+    border-bottom:0.145em solid #ffd27f;
+    border-left:0.145em solid #ffae19;
     box-shadow: 0 0 0.2em #000;
     &:hover ${Img} {
         animation: ${rotate} 1s linear infinite;

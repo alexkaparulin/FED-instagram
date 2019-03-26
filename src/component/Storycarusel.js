@@ -90,7 +90,7 @@ const Div = styled.div `
     margin:0 0 0.4em 0;
     display:flex;
     align-items:center;
-    height: 8em;
+    height: 9em;
     overflow: hidden;
     box-sizing: border-box;
 `
@@ -118,6 +118,7 @@ const carousel = keyframes`
 const ImgBox = styled.div`
     display:flex;
     flex-direction:column;
+    padding-top:0.2em;
 `
 const Img = styled.img`
     border:0.1em solid lightgray;
@@ -130,7 +131,6 @@ const Img = styled.img`
 const ImgId = styled.p`
     margin-top:0.1em;
     font-size:0.7em;
-    /* margin-left:1.5em; */
     align-self:center;
 `
 const Plus = styled.img`

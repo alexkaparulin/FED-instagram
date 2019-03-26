@@ -160,7 +160,7 @@ const UserStories = styled.div`
 const PeopleStories = styled.div`
       display:flex;
       flex-direction:column;
-      overflow-y:scroll;
+      overflow:hidden auto;
 `
 const UserFollow = styled.div`
     display:flex;

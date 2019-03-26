@@ -25,7 +25,8 @@ const Story = styled.div`
       align-items:center;
       padding:1.5em 0;
       /* height:100%; */
-      margin :0;
+      border:.1em solid red;
+      margin:0.1em;
       `
 const SImg = styled.img`
       height:2em;

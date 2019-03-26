@@ -73,10 +73,10 @@ class Homepage extends Component{
                         </PeopleStories>
                     </UserStories>
                     <UserFollow>
-                        <TeBox>
+                        <TeBox2>
                             <Textgray>Suggestions For You</Textgray>
                             <Text>See All</Text>
-                        </TeBox> 
+                        </TeBox2> 
                         <PeopleFollowers>
                            <Columnfollow/>
                            <Columnfollow/>
@@ -164,7 +164,7 @@ const PeopleStories = styled.div`
 `
 const UserFollow = styled.div`
     display:flex;
-    height:15em;
+    height:12em;
     border:0.1em solid lightgray;
     border-radius:0.3em;
     padding-left:1em;
@@ -179,10 +179,8 @@ const TeBox = styled.div`
     display:flex;  
     justify-content:space-between;
     align-items:center;
-    /* width:100%; */
     margin:0.5em 0 0.5em -1em;
     position:sticky;
-    border:.1em solid red;
     height:5em;
     top:0;
 `
@@ -195,4 +193,13 @@ const Text = styled.p`
 const Textgray = styled(Text)`
     color:grey;
     font-size:0.9em;
+`
+const TeBox2 = styled.div`
+    display:flex;  
+    justify-content:space-between;
+    align-items:center;
+    margin:-1em 0 -.8em -1em;
+    position:sticky;
+    height:5em;
+    top:0;
 `

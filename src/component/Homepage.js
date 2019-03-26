@@ -198,7 +198,7 @@ const TeBox2 = styled.div`
     display:flex;  
     justify-content:space-between;
     align-items:center;
-    margin:-1em 0 -.8em -1em;
+    margin:-1em 0 -.1em -1em;
     position:sticky;
     height:5em;
     top:0;

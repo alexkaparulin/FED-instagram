@@ -85,18 +85,14 @@ class Storycarusel extends Component{
     }
 }
 export default Storycarusel
-//   const StoryDiv = styled.div`
 
-//   `
 const Div = styled.div `
     margin:0 0 0.4em 0;
     display:flex;
     align-items:center;
-    /* width: 100%; */
-    height: 6em;
+    height: 8em;
     overflow: hidden;
     box-sizing: border-box;
-    /* border:0.1em solid lightgray; */
 `
 const carousel = keyframes`
 0% {

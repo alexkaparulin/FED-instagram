@@ -95,8 +95,6 @@ const BoxCon = styled.div`
     display:flex;
     flex-direction:column;
     background:whitesmoke;
-    /* align-items:center; */
-    /* width:100%; */
 `
 const ContentBox = styled.div`
     display:flex;   
@@ -126,10 +124,8 @@ const RightBox = styled.div`
 const UserBox = styled.div`
     display:flex;
     height:3em;
-    /* border:0.1em solid red; */
     align-items:center;
     margin-bottom:1em;
-    /* border-radius:0.6em; */
 `
 const Img = styled.img`
       height:3em;
@@ -140,7 +136,6 @@ const UserData = styled.div`
       display:flex;
       flex-direction:column;
       justify-content:center;
-      /* align-items:center; */
       margin-left:1em;
 `  
 const UserName = styled.p`
@@ -157,12 +152,10 @@ const UserStories = styled.div`
     flex-direction:column;
     padding-left:1em;
     height:15em;
-    /* border:0.1em solid red; */
     margin-bottom:1em;
     border:0.1em solid lightgray;
     border-radius:0.3em;
     background:white;
-    /* box-shadow: 0 8px 6px -6px black; */
 `
 const PeopleStories = styled.div`
       display:flex;
@@ -174,7 +167,6 @@ const UserFollow = styled.div`
     height:12em;
     border:0.1em solid lightgray;
     border-radius:0.3em;
-    /* box-shadow: 0 8px 6px -6px black; */
     padding-left:1em;
     flex-direction:column;
     background:#fff;
@@ -188,12 +180,10 @@ const TeBox = styled.div`
     justify-content:space-between;
     align-items:center;
     width:100%;
-    /* margin-left:-12em; */
     margin:0.5em 0 0.5em -1em;
     position:sticky;
     height:5em;
     top:0;
-    /* border:0.2em solid red; */
 `
 const Text = styled.p`
     font-size:0.7em;

@@ -25,6 +25,7 @@ export default TopBar;
 const TopBarDiv = styled.div`
     display: flex;
     align-items:center;
+    /* justify-content:center; */
     border-bottom:2px solid lightgray;
     background: white;
     height:4em;
@@ -46,7 +47,7 @@ const Line = styled.div`
 const LogoInstagram = styled.img`
     height: 1.7em;
     width: 5em;
-    margin-top:0.2em;
+    margin-top:0.4em;
 `
 
 

@@ -59,7 +59,8 @@ const Imgborder = styled.div`
     padding:0.12em;
     height:3.5em;
     width:3.5em;
-    margin:0.03em 0.45em;
+    margin:0em 0.45em;
+    margin-top:0.1em;
     background:white;
     border-top:0.15em solid #b266b2;
     border-right:0.15em solid  #a64ca6;

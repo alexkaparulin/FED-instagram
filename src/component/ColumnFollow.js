@@ -24,9 +24,7 @@ export default Columnfollow
 const Story = styled.div`
       display:flex;
       align-items:center;
-      /* margin:1.5em 0; */
-      /* height:10em; */
-      border:.1em solid red;
+      margin-top:-1em;
 `
 const SImg = styled.img`
       height:2em;

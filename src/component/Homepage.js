@@ -160,13 +160,11 @@ const UserStories = styled.div`
 const PeopleStories = styled.div`
       display:flex;
       flex-direction:column;
-      justify-content:space-between;
-      align-items:space-between;
-      overflow: auto;
+      overflow:hidden auto;
 `
 const UserFollow = styled.div`
     display:flex;
-    height:12em;
+    height:15em;
     border:0.1em solid lightgray;
     border-radius:0.3em;
     padding-left:1em;
@@ -181,9 +179,10 @@ const TeBox = styled.div`
     display:flex;  
     justify-content:space-between;
     align-items:center;
-    width:100%;
+    /* width:100%; */
     margin:0.5em 0 0.5em -1em;
     position:sticky;
+    border:.1em solid red;
     height:5em;
     top:0;
 `

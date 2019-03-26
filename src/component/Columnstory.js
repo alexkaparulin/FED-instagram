@@ -23,10 +23,7 @@ export default Columnstory
 const Story = styled.div`
       display:flex;
       align-items:center;
-      /* justify-content:flex-start; */
-      padding:1.2em 0;
       border:.1em solid black;
-      margin-top:0.3em;
       `
 const SImg = styled.img`
       height:2em;

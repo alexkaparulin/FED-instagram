@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import styled from 'styled-components';
 
 // import photoLiked from '../media/FrontInstaExamaple1.jpg'
-import Id from '../media/FrontInstaExamaple2.jpg'
+// import Id from '../media/FrontInstaExamaple2.jpg'
 import Marsh from '../media/Marsh.jpg'
 
 class Likenotification extends Component{
@@ -10,13 +10,13 @@ class Likenotification extends Component{
         return(
             <PhotoLikes>
                 <LBox>
-                        <ImgUser src={Id}></ImgUser>
+                    <ImgUser src={this.props.userPhoto}></ImgUser>
                     <Text>
                         <IdName>{this.props.user}</IdName>liked your photo.
                         <Time>{this.props.time}</Time>
                     </Text>
                 </LBox>
-                        <ImgLiked src={Marsh} ></ImgLiked>
+                    <ImgLiked src={Marsh} ></ImgLiked>
           </PhotoLikes>
         )
     }

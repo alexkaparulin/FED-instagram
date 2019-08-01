@@ -24,15 +24,25 @@ import Columnfollow from './ColumnFollow';
 
 
 class Homepage extends Component{
+
+    componentDidMount(){
+        // console.log('im here')
+        let myPic = localStorage.getItem('fileBase64');
+        // myPic.replace(/^data:image\/(png|jpg);base64,/, "");
+        this.setState({local:myPic})
+        // console.log(myPic)
+    }
     constructor(props){
         super(props);
         this.state = {
             original_list:[],
             profile_data: 'Marshmello',
-            fullname:'DJ MARSHMELLO'
+            fullname:'DJ MARSHMELLO',
+            local:''
         }
     }
     render(){
+        const {local}=this.state;
         return(
         <BoxCon>
             {/* <Topbarhome /> */}
@@ -40,6 +50,7 @@ class Homepage extends Component{
             <RowBox>
                 <ContentBox>
                     <Stories />
+                    <Post  id="DJ Marshmello" src={local}  userphoto={userPic} username="DJ Marshmello"/>
                     <Post  id="MartinGarrix" src={show} userphoto={garrix} username="MartinGarrix" title="Here we go again"/>
                     <Post  id="DonaldTrump" src={office} userphoto={imageid} username="DonaldTrump" title="I'm not angry..."/>
                     <Post  id="CardiB" src={prize} userphoto={cardi} username="CardiB" title="Papparazi.."/>

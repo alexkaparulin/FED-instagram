@@ -8,26 +8,33 @@ class Links extends Component {
         super();
         this.state ={
             searchopen:false,
-            data:[]
+            data:[],
+            searchValue:''
         }
     }
     toggleDropDown=(e)=>{
         e.preventDefault();
-   if(!this.state.searchopen){
-        this.setState({ searchopen: true }, () => {
-            console.log(this.state.searchopen)})
+        if(!this.state.searchopen){
+                this.setState({ searchopen: true }, () => {
+                // console.log(this.state.searchopen)
+            })
+            }
+        else{
+                this.setState({searchopen:false},()=>{
+                    // console.log(this.state.searchopen)
+                })}
     }
-   else{
-        this.setState({searchopen:false},()=>{
-            console.log(this.state.searchopen)})}
+    onSearched=(e)=>{
+        // console.log(e.target.value)
+        this.setState({searchValue:e.target.value})
     }
-  
     render(){
+        const {searchValue} = this.state;
         return(   
-    <ULinks>
-            <Input type="text" placeholder="Search" className="seaBar" onClick={this.toggleDropDown}></Input>
+        <ULinks>
+            <Input type="text" placeholder="Search" className="seaBar" onClick={this.toggleDropDown} onChange={this.onSearched}></Input>
             {
-                this.state.searchopen? <OpenSearch />:''
+                this.state.searchopen? <OpenSearch value={searchValue}/>:''
             }
             <Link to="/search">
                 <i className="fas fa-search"></i>
@@ -44,7 +51,7 @@ class Links extends Component {
             {/* <Link to="/signup">
                 <Signup_link onClick={this.disableTopBar}>Sign up</Signup_link>
             </Link>  */}
-    </ULinks>
+        </ULinks>
     
 )
 }

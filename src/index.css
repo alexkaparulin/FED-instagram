@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +27,10 @@ code {
     color:rgb(177, 176, 176);
     text-align: center;
   }
+  .like2{
+    display: flex;
+    /* color:red; */
+  }
   i{
     color:black;
     font-size:1.1em;
@@ -36,8 +41,8 @@ code {
     color:white;
     position: absolute;
     right:0.2em;
-    
   }
+
   @media screen and (min-width: 1440px) {
     .fa-ellipsis-h {
      right:-2em;

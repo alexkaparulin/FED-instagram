@@ -2,45 +2,33 @@ import React,{Component} from 'react';
 import styled from 'styled-components';
 import Likenotification from './Likeontification';
 import Bottomnav from './Bottomnav';
+import data2 from './Datap';
 
 class Activity extends Component{
+    componentDidMount(){
+        this.setState({users:data2})
+    }
+    constructor(props) {
+        super(props);
+        this.state = {
+            users:[] 
+        };
+    }
 render(){
-
+    const {users}= this.state
+    // console.log(users)
+    let sortUsers = users.map((user,i)=>{
+        return(
+            <Likenotification key={i} user={user.first_name+user.last_name} userPhoto={user.images} time={i+2+'Mins'}/>
+        )
+    })
     return(
        <BoxContain>
             <Top>
                 <Text>Activity</Text>
             </Top>
             <Div>
-            <Likenotification user="TarikBlack" time="2m"/>
-            <Likenotification user="Loremipsum" time="4m"/>
-            <Likenotification user="DonffLogen4" time="5m"/>
-            <Likenotification user="DonffLogen4" time="12m"/>
-            <Likenotification user="DonffLogen4" time="17m"/>
-            <Likenotification user="DonffLogen4" time="17m"/>
-            <Likenotification user="DonffLogen4" time="20m"/>
-            <Likenotification user="Donff3333Logen4" time="24m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="37m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="37m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="37m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="37m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
-            <Likenotification user="DonffLogen4" time="37m"/>
-            <Likenotification user="DonffLogen4" time="47m"/>
+                {sortUsers}
             </Div>
             <Bottomnav />
        </BoxContain>

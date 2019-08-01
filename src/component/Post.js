@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import styled from 'styled-components'
 
 import dots from '../media/dots.png'
+import heart from '../media/red-heart.png'
 import TodoApp from './TodoApp';
 
 class Post extends Component{
@@ -15,18 +16,20 @@ class Post extends Component{
         // this.handleChange = this.handleChange.bind(this);
         // this.handleSubmit = this.handleSubmit.bind(this);
     }
-    pictureLiked(){
+    pictureLiked=()=>{
         const likeImage = document.querySelector('.like2') ;
+        const redHeart = document.querySelector('.redHeart') ;
         let addedLiked = this.state.likes + 1;
-        if(addedLiked===1){
+        if(addedLiked === 1){
             this.setState({likes:addedLiked});
-            likeImage.style.color = 'red';
+            likeImage.style.display = 'none';
+            redHeart.style.display = 'flex';
         }
         else{
             let removeLiked = this.state.likes - 1;
             this.setState({likes:removeLiked});      
-            likeImage.style.color = 'black';
-
+            likeImage.style.display = 'flex';
+            redHeart.style.display = 'none';
         }
 }
     // eachComment=(text, i) =>(
@@ -47,7 +50,6 @@ class Post extends Component{
             this.addComment(e.target.value);
             e.preventDefault();
             console.log(this.state)
-            
         }
     }
     render(){
@@ -66,6 +68,7 @@ class Post extends Component{
             <BottomPost>
                 <BoBoxLeft>
                 <i className="far fa-heart like2"  onClick={()=> this.pictureLiked()}></i>
+                <Heart src={heart} className='redHeart'></Heart>  
                 <i className="far fa-comment"></i>
                 <i className="far fa-share-square"></i>
                 </BoBoxLeft>
@@ -99,13 +102,16 @@ const CBox = styled.div`
          width:38em;
          border-radius:.2em;
      }
-
 `
 const UserBox = styled.div`
     height:4em;
     display:flex;
     align-items:center;
-    
+`
+const Heart = styled.img`
+    height:1.5em;
+    width:1.4em;
+    display:none;
 `
 const Img = styled.img`
     border-top:0.1em solid #b266b2;
@@ -126,7 +132,6 @@ const PostedBox = styled.div`
     @media (min-width: 40em) {
         height: 24em;
       }
-
 `
 const PostImg = styled.img`
     height:100%;

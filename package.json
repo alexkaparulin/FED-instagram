@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "async-await": "^0.1.40",
+    "dotenv": "^7.0.0",
     "fetch": "^1.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

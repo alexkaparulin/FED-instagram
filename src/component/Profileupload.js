@@ -15,33 +15,40 @@ import marsh11 from '../media/marsh11.jpg'
 import marsh12 from '../media/marsh12.jpg'
 
 
-
-
-
 class Profileupload extends Component{
+    componentDidMount(){
+        // console.log('im here')
+        let myPic = localStorage.getItem('fileBase64');
+        // myPic.replace(/^data:image\/(png|jpg);base64,/, "");
+        this.setState({local:myPic})
+        // console.log(myPic.length)
+    }
+    constructor(props) {
+        super(props);
+        this.state = {
+            images: [marsh1,marsh2,marsh3,marsh4,marsh5,marsh6,marsh7,marsh8,marsh9,marsh10,marsh11,marsh12],
+            local:'' 
+        };
+    }
     render(){
+        const {images,local} = this.state;
+        // console.log(images)
+        let imagesToShow = images.map((image,i) => {
+            return (
+                <Img key={i} src={image}></Img>
+            )});
         return(
         <BoxCon>
             <BoxIcons>
-                <i className="fas fa-th"></i>
+                <i className="fas fa-th" src={marsh1}></i>
                 <i className="fas fa-arrows-alt"></i>
                 <i className="fas fa-tv"></i>
                 <i className="fas fa-bookmark"></i>
                 <i className="fas fa-tag"></i>  
             </BoxIcons>
             <UserImages>
-             <Img src={marsh1}></Img>
-             <Img src={marsh2}></Img>
-             <Img src={marsh3}></Img>
-             <Img src={marsh4}></Img>
-             <Img src={marsh5}></Img>
-             <Img src={marsh6}></Img>
-             <Img src={marsh7}></Img>
-             <Img src={marsh8}></Img>
-             <Img src={marsh9}></Img>
-             <Img src={marsh10}></Img>
-             <Img src={marsh11}></Img>
-             <Img src={marsh12}></Img>
+             {imagesToShow}
+                <Img src={local}></Img>
             </UserImages>
         </BoxCon>
         )
@@ -53,9 +60,6 @@ const BoxCon = styled.div`
     display:flex;
     flex-direction:column;
     justify-content:center;
-    /* align-items:center; */
-   
-    
 `
 const BoxIcons = styled.div`
     padding: 0 1em;
@@ -63,7 +67,6 @@ const BoxIcons = styled.div`
     justify-content:space-around;
     align-items:center;
     height:3em;
-    
 `
 const UserImages = styled.div`
     margin:.2em 0;
@@ -79,7 +82,7 @@ const Img = styled.img`
     height:6.5em;
     width:6.5em;
     flex-basis:30%;
-    flex-grow:1;
+    /* flex-grow:1; */
     &:hover{
         opacity:0.75; 
     }

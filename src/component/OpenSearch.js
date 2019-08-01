@@ -3,11 +3,12 @@ import styled from 'styled-components';
 import data2 from './Datap';
 
 class OpenSearch extends Component{
+    
     constructor(){
         super();
         this.state ={
             searchopen:true,
-            data:[]
+            data:[],
         }
     }
     // update_list(event) {
@@ -35,6 +36,7 @@ class OpenSearch extends Component{
 
     const { data } = this.state;
     let listToShow = data.map((item,i) => {
+        if(item.first_name.toLowerCase().includes(this.props.value)){
         return (
         <EachDataBox key={i}>
             <Img src={item.images}></Img>
@@ -43,12 +45,12 @@ class OpenSearch extends Component{
                 <P>{item.last_name}</P>
             </PBox>
         </EachDataBox>
-        )});
+        )}});
 
         return(
             <SearchOpen>
                 <Box>
-                {listToShow}
+                    {listToShow}
                 </Box>
             </SearchOpen>
         )
